@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom right, #4c4c6d, #1a1a2e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background: #27293d;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 350px;
+}
+
+#display {
+  background: #444;
+  color: #fff;
+  width: 100%;
+  font-size: 2rem;
+  text-align: right;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  background: #1f4068;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #162447;
+}
+
+button:active {
+  background: #0d1b2a;
+}
+
+button:nth-child(3),
+button:nth-child(4),
+button:nth-child(16),
+button:nth-child(20) {
+  background: #d63447;
+}
+
+button:nth-child(3):hover,
+button:nth-child(4):hover,
+button:nth-child(16):hover,
+button:nth-child(20):hover {
+  background: #c9283e;
+}
+
+button:nth-child(3):active,
+button:nth-child(4):active,
+button:nth-child(16):active,
+button:nth-child(20):active {
+  background: #b82031;
+}
+
+button.trig {
+  background: #d63447;
+}
+
+button.trig:hover {
+  background: #c9283e;
+}
+
+button.trig:active {
+  background: #b82031;
+}
+
+button:nth-last-child(2):hover {
+  background: #d13347;
+}
+
+button:nth-last-child(2):active {
+  background: #c12a38;
+}
